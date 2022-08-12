@@ -1,0 +1,327 @@
+/* ---------- CODIGOS FUENTE---------------------- */
+
+:root {
+    --primario: #9c2780;
+    --primarioOscuro: #891190;
+    --secundario: #ffce00;
+    --secundarioOscuro: #daae00;
+    --blanco: #FFF;
+    --negro: #000;
+
+    --fuentePrincipal: font-family: 'Acme', sans-serif;
+    font-family: 'Outfit', sans-serif;
+
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  /*-----------------INICIO DEL DOCUMENTO -----------*/
+
+  body{
+      background-color: var(--primario);
+font-size: 1.6rem;
+    line-height: 1.5;
+
+  }
+
+  p{
+      font-size: 1.8rem;
+      font-family: var(fuentePrincipal);
+      color: var(--blanco);
+  }
+
+  *{
+      text-decoration: none;
+  }
+
+  img{
+      max-width: 100%;
+  }
+
+  .contenedor{
+      max-width: 120rem;
+      margin: 0 auto;
+  }
+
+  h1,h2,h3{
+text-align: center;
+color: var(--secundario);
+font-family: var(--fuentePrincipal);
+  }
+
+h1{
+    font-size: 4rem;
+}
+
+h2{
+    font-size: 3.2rem;
+    
+}
+
+h3{
+    font-size: 2.4rem;
+}
+
+.header{
+    display: flex;
+    justify-content: center;
+}
+
+.header__logo{
+    margin: 3rem 0;
+}
+
+
+/* -------------------NAVEGACION---------------- */
+
+.navegacion{
+background-color: var(--primarioOscuro);
+padding: 1rem 0;
+display: flex;
+justify-content: center;
+gap: 2rem;
+
+}
+
+.navegacion__enlace{
+font-family: var(--fuentePrincipal);
+color: var(--blanco);
+font-size: 3rem;
+
+}
+
+.navegacion__enlace--activo, .navegacion__enlace:hover{
+    color: var(--secundario);
+}
+
+/* GRID */
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+@media (min-width: 768px){
+    .grid{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        
+    }
+}
+
+/* -----------------PRODUCTOS---------------- */
+
+
+.producto{
+ background-color: var(--primarioOscuro);
+ padding: 1rem;
+}
+
+.producto__imagen{
+    width: 100%;
+}
+
+.producto__nombre{
+    font-size: 4rem;
+}
+
+.producto__precio{
+    font-size: 2.8rem;
+    color: var(--secundario);
+}
+
+ .producto__nombre,.producto__precio{
+    font-family: var(--fuentePrincipal);
+    margin:1rem 0;
+    text-align: center;
+    line-height: 1.1;
+ }
+
+/* ---------------------FOOTER---------------- */
+
+.footer{
+    background-color: var(--primarioOscuro);
+    padding: 1rem 0;
+    margin-top: 2rem;
+}
+
+.footer__texto{
+    font-family: var(--fuentePrincipal);
+    text-align: center;
+    font-size: 2.2rem;
+}
+
+/* -----------GRAFICOS---------------- */
+
+.grafico{
+    
+}
+
+.grafico--camisas{
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+}
+
+.grafico--node{
+    grid-row: 5 / 6;
+    grid-column: 1 / 3;
+
+}
+
+@media (min-width: 768px){
+    .grafico--node{
+        grid-row: 5 / 6;
+        grid-column: 2 / 4;
+    
+    }
+}
+
+
+/* -------------------SECCION DE NOSOTROS--------------- */
+
+.gridNosotros1{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 4rem;
+
+}
+
+.gridNosotrosDerecha{
+    grid-row: 1 / 2 ;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+.gridNosotrosIzquierda p{
+    font-size: 1.8rem;
+    line-height: 2.8rem;
+}
+
+@media (min-width: 768px){
+    .gridNosotros1{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 4rem;
+    
+    }
+    .gridNosotrosDerecha{
+        grid-column: 2/3;
+    }
+}
+
+.gridNosotros2{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.gridNosotros2{
+    gap: 2rem;
+    text-align: center;
+}
+
+.gridNosotros2 img{
+    text-align: center;
+}
+
+.gridNosotros2 p{
+    text-align: center;
+}
+
+.gridNosotros2 h3{
+    margin-top: 0;
+}
+
+@media (max-width: 768px){
+    .gridNosotros2{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gridNosotros2 img{
+        text-align: center;
+        align-items: space-between;
+    }
+
+    }
+
+
+/* -------------------------------------HTML PRODUCTO--------------------------------------- */
+
+
+.camisa{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    text-align: center;
+    column-gap: 0rem;
+}
+
+@media (max-width: 768px){
+    .camisa{
+        display: flex;
+        flex-direction: column;
+        gap:2rem;
+    }
+}
+
+.camisa img{
+    width: 80%;
+}
+
+.camisaContenido{
+    width: 100%;
+}
+
+.camisaContenido p{
+    text-align: start;
+    width: 60%;
+    margin:auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0rem;
+    
+}
+
+.formularioSubmit{
+    background-color: var(--secundario);
+    border: none;
+    font-size: 2rem;
+    font-family: var(--fuentePrincipal);
+    padding: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+    transition: background-color 1s ease;
+    grid-column: 1/3;
+}
+
+
+.formularioSubmit:hover{
+    cursor: pointer;
+    background-color: var(--secundarioOscuro);
+}
+
+
+.formularioCampo{
+    border: 1rem solid var(--primarioOscuro) ;
+    background-color: var(--primario);
+    color: var(--blanco);
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    padding: 1rem;
+    appearance: none;
+    
+}
+
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- HTML -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Camisa React</title>
+
+    <!-- ESTILOS -->
+    <link rel="stylesheet" href="ESTILOS/estilos.css">
+    <link rel="stylesheet" href="ESTILOS/normalize.css">
+
+    <!-- FUENTES -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Outfit:wght@300&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <header>
+        <a href="index.html" class="header">
+            <img class="header__logo" src="IMAGENES/logo.png" alt="logotipo">
+        </a>
+    </header>
+
+    <nav class="navegacion">
+        <a class="navegacion__enlace navegacion__enlace--activo" href="index.html">Tienda</a>
+        <a class="navegacion__enlace" href="nosotros.html">Nosotros </a>
+    </nav>
+
+    <main class="contenedor">
+        <h1>React js</h1>
+        <div class="camisa">
+
+            <img src="/IMAGENES/3.jpg" alt="">
+
+            <div class="camisaContenido">
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi amet facilis tempora quibusdam quisquam iusto culpa blanditiis voluptatum dolorum. Minima eligendi modi eos nisi quia autem vel odit quisquam nulla?</p>
+                <form class="formulario">
+                    <select class="formularioCampo" name="" id="">
+                        <option selected disabled>Selecciona un talle</option>
+                        <option >S</option>
+                        <option >M</option>
+                        <option >L</option>
+                    </select>
+                <input class="formularioCampo" type="number" min="1" placeholder="Introduce una cantidad">
+                <input class="formularioSubmit" type="submit" value="Agregar al carrito">
+                </form>
+            </div>
+
+        </div>
+    </main>
+
+
+
+    <footer class="footer">
+        <p class="footer__texto">Front End Store |Montes Dev| Todos los derechos Reservados 2022.</p>
+    </footer>
+
+    <script src="JS/codigo.js"></script>
+</body>
+</html>
