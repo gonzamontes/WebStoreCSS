@@ -16,44 +16,45 @@
 html {
     box-sizing: border-box;
     font-size: 62.5%;
-  }
+}
+
   *, *:before, *:after {
     box-sizing: inherit;
-  }
+}
 
-  /*-----------------INICIO DEL DOCUMENTO -----------*/
+/*-----------------INICIO DEL DOCUMENTO -----------*/
 
-  body{
-      background-color: var(--primario);
-font-size: 1.6rem;
+body{
+    background-color: var(--primario);
+    font-size: 1.6rem;
     line-height: 1.5;
 
-  }
+}
 
-  p{
-      font-size: 1.8rem;
-      font-family: var(fuentePrincipal);
-      color: var(--blanco);
-  }
+p{
+    font-size: 1.8rem;
+    font-family: var(fuentePrincipal);
+    color: var(--blanco);
+}
 
-  *{
-      text-decoration: none;
-  }
+*{
+    text-decoration: none;
+}
 
-  img{
-      max-width: 100%;
-  }
+img{
+    max-width: 100%;
+}
 
-  .contenedor{
-      max-width: 120rem;
-      margin: 0 auto;
-  }
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+}
 
-  h1,h2,h3{
-text-align: center;
-color: var(--secundario);
-font-family: var(--fuentePrincipal);
-  }
+h1,h2,h3{
+    text-align: center;
+    color: var(--secundario);
+    font-family: var(--fuentePrincipal);
+}
 
 h1{
     font-size: 4rem;
@@ -75,6 +76,23 @@ h3{
 
 .header__logo{
     margin: 3rem 0;
+}
+
+header h1{
+    font-size: 6rem;
+    margin: 2rem 0 0 0 ;
+    padding: 0;
+    font-family: 'Fascinate Inline', cursive;
+}
+
+header h2{
+    font-size: 4rem;
+    font-family: 'Fascinate Inline', cursive;
+    margin: 0 0 2rem 0rem;
+}
+
+.titulo-pagina{
+    color: var(--secundario);
 }
 
 
@@ -119,8 +137,8 @@ font-size: 3rem;
 
 
 .producto{
- background-color: var(--primarioOscuro);
- padding: 1rem;
+    background-color: var(--primarioOscuro);
+    padding: 1rem;
 }
 
 .producto__imagen{
@@ -136,12 +154,12 @@ font-size: 3rem;
     color: var(--secundario);
 }
 
- .producto__nombre,.producto__precio{
+.producto__nombre,.producto__precio{
     font-family: var(--fuentePrincipal);
     margin:1rem 0;
     text-align: center;
     line-height: 1.1;
- }
+}
 
 /* ---------------------FOOTER---------------- */
 
