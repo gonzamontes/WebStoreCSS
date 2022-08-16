@@ -1,8 +1,8 @@
 /* ---------- CODIGOS FUENTE---------------------- */
 
 :root {
-    --primario: #9c2780;
-    --primarioOscuro: #891190;
+    --primario:  #153159;
+    --primarioOscuro:#012e46;
     --secundario: #ffce00;
     --secundarioOscuro: #daae00;
     --blanco: #FFF;
@@ -69,6 +69,10 @@ h3{
     font-size: 2.4rem;
 }
 
+.header__logo{
+    margin: 3rem 0;
+}
+
 .header{
     display: flex;
     justify-content: center;
@@ -76,19 +80,6 @@ h3{
 
 .header__logo{
     margin: 3rem 0;
-}
-
-header h1{
-    font-size: 6rem;
-    margin: 2rem 0 0 0 ;
-    padding: 0;
-    font-family: 'Fascinate Inline', cursive;
-}
-
-header h2{
-    font-size: 4rem;
-    font-family: 'Fascinate Inline', cursive;
-    margin: 0 0 2rem 0rem;
 }
 
 .titulo-pagina{
